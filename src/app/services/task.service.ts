@@ -11,14 +11,12 @@ export class TaskService {
 
   constructor(private http: HttpClient) {}
 
-/*************  ✨ Codeium Command ⭐  *************/
-  /**
-   * Retrieves a list of tasks from the API.
-   *
-   * @returns an observable of the list of tasks
-   */
-/******  a597614f-a25e-4509-9096-a527d425b744  *******/
   getTasks(): Observable<Task[]> {
     return this.http.get<Task[]>(this.apiUrl);
+  }
+
+  deleteTask(task: Task): Observable<Task> {
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.delete<Task>(url);
   }
 }
