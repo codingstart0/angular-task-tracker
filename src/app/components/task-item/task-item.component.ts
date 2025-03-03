@@ -11,6 +11,7 @@ export class TaskItemComponent implements OnInit {
   @Input() task: Task | null = null;
   @Input() faTimes = faTimes;
   @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter();
+  @Output() onToggleReminder: EventEmitter<Task> = new EventEmitter();
 
   constructor() {}
 
@@ -20,5 +21,10 @@ export class TaskItemComponent implements OnInit {
       this.onDeleteTask.emit(task);
     }
   }
+
+  onToggle(task: Task | null) {
+    if (task) {
+      this.onToggleReminder.emit(task);
+    }
+  }
 }
-import { faAngular } from '@fortawesome/free-brands-svg-icons';
