@@ -23,6 +23,12 @@
       "text": "Test",
       "day": "May 7th at 12:30pm",
       "reminder": false
+    },
+    {
+      "id": "ef6e",
+      "text": "close",
+      "day": "Monday",
+      "reminder": true
     }
   ]
 }
