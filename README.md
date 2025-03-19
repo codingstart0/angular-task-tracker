@@ -8,7 +8,7 @@ Run 'npm run server' to run `json-server --watch db.json --port 5000` to CRUD da
 
 ## Development server
 
-Run `npm run start` or `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run ` run start` or `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -17,6 +17,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+npm
 
 ## Running unit tests
 
